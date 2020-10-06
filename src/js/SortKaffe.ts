@@ -1,21 +1,21 @@
-import { Kaffe } from "./kaffe";
-/**SortKaffe klassen arver fra Kaffe klassen 
- * SortKaffe overskriver ikke metoden Styrke, men bruger den som findes i 
- * superklassen (base klassen) Kaffe
+import { Coffee } from "./kaffe";
+/**BlackCoffee class inherit from the Coffee class 
+ * BlackCoffee dosen't override the method strength men uses the method 
+ * that exist in the super class (base class)
 */
-export class SortKaffe extends Kaffe {
+export class BlackCoffee extends Coffee {
     
-    public KaffeDrik(): string {
-        return "Sort Kaffe";
+    public CoffeeDrink(): string {
+        return "Black Coffee";
     }
     
-    public Pris(): number {
-        let result: number = 20 - this.Rabat;
+    public Price(): number {
+        let result: number = 20 - this.Discount;
         return (result);
     }
 
-    constructor(rabat:number=0){
-        super(rabat);
+    constructor(discount:number=0){
+        super(discount);
     }
 
 }

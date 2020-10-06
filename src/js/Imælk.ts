@@ -1,5 +1,8 @@
-/**Interfacet Imælk skal implmenteres af de kaffedrikke som bruger mælk */
-export interface Imælk{
-    /**Angiver hvor meget mælk der skal bruges i kaffendrikken */
-    mlmælk (): number;
+/**
+ * the Interface Imilk must be implemented by all coffee that uses milk
+ */
+export interface Imilk{
+    /**
+     * tell how much milk the coffee drink needs */
+    mlmilk (): number;
 }

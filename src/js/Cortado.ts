@@ -1,27 +1,26 @@
-import { Kaffe } from "./Kaffe";
-import { Imælk } from "./Imælk";
-/**Cortado klassen arver fra Kaffe klassen og implmenterer interface Imælk */
-export class Cortado extends Kaffe implements Imælk{
+import { Coffee } from "./Kaffe";
+import { Imilk } from "./Imælk";
+/**the Cortado class inherit from the Coffee class
+ * and implements the Imilk interface
+ * */
+export class Cortado extends Coffee implements Imilk{
     
-    public KaffeDrik(): string {
+    public CoffeeDrink(): string {
         return "Cortado";
     }
-    mlmælk(): number {
+    mlmilk(): number {
         return 25;
     }
     
-    public Pris(): number {
+    public Price(): number {
         return 25;
     }
 
-    constructor(rabat:number=0){
-        super(rabat);
+    constructor(discount:number=0){
+        super(discount);
     }
 
-    /**
-     * Styrke
- :String    */
-    public Styrke():String {
+    public Strength():String {
        return "Mild"; 
     }
 

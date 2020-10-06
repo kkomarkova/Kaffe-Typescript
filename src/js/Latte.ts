@@ -1,27 +1,30 @@
-import { Kaffe } from "./Kaffe";
-import { Imælk } from "./Imælk";
-/**Latte klassen arver fra Kaffe klassen og implementerer interface Imælk */
-export class Latte extends Kaffe implements Imælk{
-    mlmælk(): number {
+import { Coffee } from "./Kaffe";
+import { Imilk } from "./Imælk";
+/**
+ * the Latte class inherits from the Coffee class and 
+ * implements the interface IMilk 
+ */
+export class Latte extends Coffee implements Imilk{
+    mlmilk(): number {
         return 125;
     }
     
-    public KaffeDrik(): string {
+    public CoffeeDrink(): string {
         return "Latte";
     }
 
-    public Pris(): number {
+    public Price(): number {
         return 40;
     }
 
-    constructor(rabat:number=0){
-        super(rabat);
+    constructor(discount:number=0){
+        super(discount);
     }
 
     /**
      * Styrke
  :String    */
-    public Styrke():String {
+    public Strength():String {
        return "Mild"; 
     }
 

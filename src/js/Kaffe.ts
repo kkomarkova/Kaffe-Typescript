@@ -1,29 +1,33 @@
 /**
- * Base klassen Kaffe som skal bruges af alle de andre kaffe klasser
+ * the base class Coffee that all the coffe classes uses
  */
-export abstract class Kaffe{
+export abstract class Coffee{
 
-    /**Den rabat som gives på denne kaffe */
-    public Rabat:number;
+    /**Discount for the coffee*/
+    public Discount:number;
 
-    constructor (rabat:number){
-        this.Rabat = rabat;
+    /**
+     * cosntructorthat takes one parameter
+     * @param discount discount for the coffee
+     */
+    constructor (discount:number){
+        this.Discount = discount;
     };
 
     /**
-     * abstract Pris, Prisen på den pågældende kaffe
+     * abstract Price, Price for the coffee 
      */
-    public abstract Pris() : number;
+    public abstract Price() : number;
 
     /**
-     * abstract KaffeDrik, Hvilken kaffedrik er det
+     * abstract CoffeeDrink, Which coffeedrink is it
      */
-    public abstract KaffeDrik() : string;
+    public abstract CoffeeDrink() : string;
 
     /**
-     * Styrke : String , Hvor stærk er kaffe   */
-    public Styrke(): String {
-        return "Stærk";
+     * Strength : String , How strong is the coffee   */
+    public Strength(): String {
+        return "Strong";
     }
 
     
