@@ -1,5 +1,5 @@
-import { Coffee } from "./Kaffe";
-import { Imilk } from "./Imælk";
+import { Coffee } from "./Coffee";
+import { Imilk } from "./Imilk";
 /**the Cortado class inherit from the Coffee class
  * and implements the Imilk interface
  * */

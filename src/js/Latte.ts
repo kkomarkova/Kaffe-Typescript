@@ -1,5 +1,5 @@
-import { Coffee } from "./Kaffe";
-import { Imilk } from "./Imælk";
+import { Coffee } from "./Coffee";
+import { Imilk } from "./Imilk";
 /**
  * the Latte class inherits from the Coffee class and 
  * implements the interface IMilk 

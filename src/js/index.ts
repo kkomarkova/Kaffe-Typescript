@@ -1,7 +1,7 @@
 import { Cortado } from "./Cortado";
-import { Coffee } from "./kaffe";
+import { Coffee } from "./Coffee";
 import { Latte } from "./Latte";
-import { BlackCoffee } from "./SortKaffe";
+import { BlackCoffee } from "./BlackCoffee";
 
 //liste til at have en af hver kaffe i
 let coffeeMenuList:Coffee[] = new Array<Coffee>();
