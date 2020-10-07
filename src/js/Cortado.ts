@@ -16,5 +16,9 @@ Strength(): string
 {
     return "Weak"
 }
+CoffeeDrink(): string
+{
+    return "Cortado"
+}
 
 }

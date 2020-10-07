@@ -3,6 +3,9 @@ export abstract class Coffee
 //Property discount
 discount: number;
 name: string;
+// abstract method CoffeeDrink
+abstract CoffeeDrink(): string 
+
 //abstract method Price() An abstract method “Price()” with return type number.
 abstract Price():number;
 

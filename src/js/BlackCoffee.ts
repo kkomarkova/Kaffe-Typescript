@@ -11,5 +11,9 @@ Strength(): string
 {
     return "Strong";
 }
+CoffeeDrink():string
+{
+    return "Black Coffee"
+}
 
 }
