@@ -1,12 +1,19 @@
-interface Person {
-    firstName: string;
-    lastName: string;
-}
+abstract class Coffee
+{
+//Property discount
+discount: number;
+//abstract method Price() An abstract method “Price()” with return type number.
+abstract Price():number;
 
-function greeter(person: Person): string {
-    return "Hello, " + person.firstName + " " + person.lastName;
+//A method "Strength ()" With the return type string and which returns the value "Mild
+Strength (type:string)
+{
+    return "Mild";
 }
-let user: Person = { firstName: "John", lastName: "Doe" };
-
-let element: HTMLDivElement = <HTMLDivElement> document.getElementById("content");
-element.innerHTML = greeter(user);
+//A constructor that takes a parameter (discount: number) and sets the “discount” property with this value.
+cunstructor(discount?:number)
+{
+if(discount == void 0) {discount = 0}
+this.discount = discount;
+}
+}
