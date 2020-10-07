@@ -1,3 +1,4 @@
+import { Coffee } from "./Coffee";
 import { iMilk } from "./imilk";
 
 // Class Cortado which implements Imilk interface
@@ -15,9 +16,5 @@ Strength(): string
 {
     return "Weak"
 }
-display():void{
-    console.log("The price is" + this.Price);
-    console.log("The strength is" + this.Strength);
-    console.log("The Discount is" + this.discount);
-}
+
 }
